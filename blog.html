@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="blog.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img
+            src="assets/images/navpack-logo-white-1.png"
+            alt="College Logo"
+          />
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle"
+              >Association <i class="fas fa-chevron-down dropdown-icon"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="about.html">Association 1</a>
+              <a href="about.html">Association 2</a>
+              <a href="about.html">Association 3</a>
+            </div>
+          </div>
+          <a href="blogs.html">Blogs</a>
+          <a href="view-more.html">News</a>
+        </div>
+        <button class="hamburger">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- Blog Header -->
+      <div class="blog-header">
+        <p class="blog-date">June 15, 2023</p>
+        <h1 class="blog-title">
+          The Complete Guide to Modern Web Development in 2023
+        </h1>
+        <img
+          src="assets/images/featured.jpg"
+          alt="Blog Featured Image"
+          class="blog-featured-image"
+        />
+      </div>
+
+      <!-- Blog Content -->
+      <div class="blog-content-container">
+        <!-- Main Content Column (80%) -->
+        <div class="blog-main-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
+            dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed
+            auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in
+            nulla enim. Phasellus molestie magna non est bibendum non venenatis
+            nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris
+            iaculis porttitor posuere.
+          </p>
+
+          <h2>Key Features of Modern Development</h2>
+
+          <ul class="feature-list">
+            <li>Component-based architecture for better code organization</li>
+            <li>Responsive design principles for all devices</li>
+            <li>Performance optimization techniques</li>
+            <li>Accessibility best practices</li>
+            <li>Modern JavaScript frameworks</li>
+          </ul>
+
+          <h2>Understanding Modern Frameworks</h2>
+
+          <p>
+            Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat.
+            Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam
+            ultrices, diam tempus vulputate egestas, eros pede varius leo, sed
+            imperdiet lectus est ornare odio. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+
+          <h3>Popular Framework Choices</h3>
+
+          <ul class="feature-list">
+            <li>React - Facebook's component-based library</li>
+            <li>Vue - Progressive JavaScript framework</li>
+            <li>Angular - Full-featured framework by Google</li>
+            <li>Svelte - Compiler-based approach</li>
+          </ul>
+
+          <h2>Performance Optimization</h2>
+          <img
+            src="assets/images/blog.jpg"
+            alt="Performance Metrics"
+            class="content-image"
+            width="400"
+            height="300"
+          />
+
+          <p>
+            Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et
+            nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet,
+            nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis
+            hendrerit risus. Phasellus nec sem in justo pellentesque facilisis.
+            Etiam imperdiet imperdiet orci.
+          </p>
+        </div>
+
+        <!-- About Column (20% - Sticky on desktop) -->
+        <aside class="blog-about">
+          <div class="about-card">
+            <h3 class="about-title">About</h3>
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="abt-read" onclick="window.location.href='about.html'">Read More</button>
+          </div>
+
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social-icon" aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <div class="faded-separator-horizontal"></div>
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+        </div>
+        <div class="gallery-grid">
+          <!-- Gallery Item 1 (Big Square) -->
+          <div class="gallery-item big-square">
+            <img
+              src="assets/images/blog.jpg"
+              alt="Gallery Image 1"
+              class="img-fluid"
+            />
+          </div>
+          <!-- Gallery Item 2 (Small Rectangle) -->
+          <div class="gallery-item small-rectangle">
+            <img
+              src="assets/images/blog.jpg"
+              alt="Gallery Image 2"
+              class="img-fluid"
+            />
+          </div>
+          <!-- Gallery Item 3 (Medium Rectangle) -->
+          <div class="gallery-item medium-rectangle">
+            <img
+              src="assets/images/blog.jpg"
+              alt="Gallery Image 3"
+              class="img-fluid"
+            />
+          </div>
+          <!-- Gallery Item 4 (Small Square) -->
+          <div class="gallery-item small-square">
+            <img
+              src="assets/images/blog.jpg"
+              alt="Gallery Image 4"
+              class="img-fluid"
+            />
+          </div>
+          <div class="gallery-item small-square">
+            <img
+              src="assets/images/blog.jpg"
+              alt="Gallery Image 4"
+              class="img-fluid"
+            />
+          </div>
+          <div class="gallery-item small-square">
+            <img
+              src="assets/images/blog.jpg"
+              alt="Gallery Image 4"
+              class="img-fluid"
+            />
+          </div>
+          <div class="gallery-item medium-rectangle">
+            <img
+              src="assets/images/blog.jpg"
+              alt="Gallery Image 3"
+              class="img-fluid"
+            />
+          </div>
+
+          <!-- Add more gallery items as needed -->
+        </div>
+      </div>
+      <!-- Add this right before the closing </section> tag -->
+      <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <span class="close-overlay" id="closeOverlay">&times;</span>
+        <img src="" alt="Zoomed Image" class="zoomed-image" id="zoomedImage" />
+      </div>
+    </section>
+
+    <div class="faded-separator-horizontal"></div>
+    <section class="more-blogs">
+      <div class="container">
+        <div class="section-header">
+          <h2>More Blogs</h2>
+          <div class="owl-nav-buttons">
+            <button class="owl-prev view-button">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="owl-next view-button">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="owl-carousel more-blogs-carousel">
+          <!-- Item 1 -->
+          <div class="more-blogs-card">
+            <div class="more-blogs-image">
+              <img src="assets/images/blog.jpg" alt="Web Design Trends" />
+            </div>
+            <div class="more-blogs-content">
+              <p class="more-blogs-date">June 15, 2023</p>
+              <h3 class="more-blogs-title">Web Design Trends</h3>
+              <button class="read-more">
+                Read More <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="more-blogs-card">
+            <div class="more-blogs-image">
+              <img src="assets/images/blog.jpg" alt="CSS Innovations" />
+            </div>
+            <div class="more-blogs-content">
+              <p class="more-blogs-date">June 15, 2023</p>
+              <h3 class="more-blogs-title">CSS Innovations</h3>
+              <button class="read-more">
+                Read More <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="more-blogs-card">
+            <div class="more-blogs-image">
+              <img src="assets/images/blog.jpg" alt="JavaScript Updates" />
+            </div>
+            <div class="more-blogs-content">
+              <p class="more-blogs-date">June 15, 2023</p>
+              <h3 class="more-blogs-title">JavaScript Updates</h3>
+              <button class="read-more">
+                Read More <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Add more items as needed -->
+        </div>
+
+        <div class="view-more-container">
+          <button class="view-button">View More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper container -->
+
+    <footer class="blog-footer">
+      <div class="footer-container">
+        <!-- Footer Columns -->
+        <div class="footer-grid">
+          <!-- About Column -->
+          <div class="footer-column">
+            <h3 class="footer-heading">About Blog</h3>
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links Column -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Assosication</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Newsletter</h3>
+            <p class="footer-text">
+              Subscribe to get the latest articles and news.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="copyright">
+            &copy; 2023 siona solutions. All rights reserved.
+          </div>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

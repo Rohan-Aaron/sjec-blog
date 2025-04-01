@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Add AOS JS CDN and initialize -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img
+            src="assets/images/navpack-logo-white-1.png"
+            alt="College Logo"
+          />
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle"
+              >Association <i class="fas fa-chevron-down dropdown-icon"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="about.html">Association 1</a>
+              <a href="about.html">Association 2</a>
+              <a href="about.html">Association 3</a>
+            </div>
+          </div>
+          <a href="blogs.html">Blogs</a>
+          <a href="view-more.html">News</a>
+        </div>
+        <button class="hamburger">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </nav>
+    </header>
+    <section class="slider">
+      <div class="swiper slider-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="slide">
+              <div class="slide-content">
+                <span class="featured-badge">Featured Blog</span>
+                <h2 class="slide-title">
+                  Beyond the Basics: 10 Hidden Features of Your Smartphone You
+                  Didn’t Know About
+                </h2>
+                <p class="slide-date">October 15, 2023</p>
+                <button
+                  class="read-button"
+                  onclick="window.location.href='blog.html'"
+                >
+                  Read More
+                </button>
+              </div>
+              <div class="slide-image">
+                <img src="assets/images/parallex.jpg" alt="Blog Image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="slide">
+              <div class="slide-content">
+                <span class="featured-badge">Featured Blog</span>
+                <h2 class="slide-title">
+                  Beyond the Basics: 10 Hidden Features of Your Smartphone You
+                  Didn’t Know About
+                </h2>
+                <p class="slide-date">November 5, 2023</p>
+                <button
+                  class="read-button"
+                  onclick="window.location.href='blog.html'"
+                >
+                  Read More
+                </button>
+              </div>
+              <div class="slide-image">
+                <img src="assets/images/parallex.jpg" alt="Blog Image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="slide">
+              <div class="slide-content">
+                <span class="featured-badge">Featured Blog</span>
+                <h2 class="slide-title">
+                  The Art of Mindful Living: Simple Habits for a Calmer, Happier
+                  You
+                </h2>
+                <p class="slide-date">December 12, 2023</p>
+                <button
+                  class="read-button"
+                  onclick="window.location.href='blog.html'"
+                >
+                  Read More
+                </button>
+              </div>
+              <div class="slide-image">
+                <img src="assets/images/parallex.jpg" alt="Blog Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add pagination if needed -->
+      </div>
+    </section>
+    <section class="latest-blogs">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-aos="fade-up">Latest Blogs</h2>
+          <div class="search-container" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              placeholder="Search blogs..."
+              class="search-input"
+            />
+          </div>
+        </div>
+
+        <div class="masonry-grid">
+          <!-- First Row: Big Left Card + 2 Vertical Cards -->
+          <div class="first-row">
+            <!-- Big Left Card -->
+            <div
+              class="blog-card big-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="blog-image">
+                <a href="blog.html"
+                  ><img src="assets/images/blog.jpg" alt="Featured Blog"
+                /></a>
+              </div>
+              <div class="blog-content">
+                <a href="blog.html">
+                  <h3 class="blog-title">
+                    The Art of Simple Living: How Less Can Be More
+                  </h3></a
+                >
+                <p class="blog-date">June 15, 2023</p>
+              </div>
+            </div>
+
+            <!-- Vertical Cards Container -->
+            <div class="vertical-cards">
+              <!-- Top Right Card -->
+              <div
+                class="blog-card vertical-card"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="blog-image">
+                  <a href="blog.html">
+                    <img src="assets/images/blog.jpg" alt="CSS Techniques"
+                  /></a>
+                </div>
+                <div class="blog-content">
+                  <a href="blog.html"
+                    ><h3 class="blog-title">
+                      10 Life-Changing Habits You Can Start Today
+                    </h3></a
+                  >
+                  <p class="blog-date">May 28, 2023</p>
+                </div>
+              </div>
+
+              <!-- Bottom Right Card -->
+              <div
+                class="blog-card vertical-card"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="blog-image">
+                  <a href="blog.html"
+                    ><img src="assets/images/blog.jpg" alt="JavaScript Tips"
+                  /></a>
+                </div>
+                <div class="blog-content">
+                  <a href="blog.html"
+                    ><h3 class="blog-title">
+                      The Future Is Here: Exploring the Latest Tech Trends
+                    </h3></a
+                  >
+                  <p class="blog-date">April 10, 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row: 3 Equal Cards -->
+          <div class="second-row">
+            <div
+              class="blog-card triple-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="blog-image">
+                <a href="blog.html">
+                  <img src="assets/images/blog.jpg" alt="Design Systems"
+                /></a>
+              </div>
+              <div class="blog-content">
+                <a href="blog.html"
+                  ><h3 class="blog-title">
+                    Hidden Gems: Travel Destinations You've Probably Never Heard
+                    Of
+                  </h3></a
+                >
+                <p class="blog-date">November 28, 2022</p>
+              </div>
+            </div>
+
+            <div
+              class="blog-card triple-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="blog-image">
+                <a href="#"
+                  ><img src="assets/images/blog.jpg" alt="Web Components"
+                /></a>
+              </div>
+              <div class="blog-content">
+                <a href="#"
+                  ><h3 class="blog-title">
+                    Mind Over Matter: The Science Behind Positive Thinking
+                  </h3></a
+                >
+                <p class="blog-date">October 15, 2022</p>
+              </div>
+            </div>
+
+            <div
+              class="blog-card triple-card"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="blog-image">
+                <a href="#">
+                  <img src="assets/images/blog.jpg" alt="Performance"
+                /></a>
+              </div>
+              <div class="blog-content">
+                <a href="#"
+                  ><h3 class="blog-title">
+                    The Ultimate Guide to Mastering Time Management
+                  </h3></a
+                >
+                <p class="blog-date">September 7, 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-more-container">
+          <button
+            class="view-button"
+            onclick="window.location.href='view-more.html'"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            View More
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Add AOS CSS CDN -->
+
+    <section class="newsletter" data-aos="fade-up">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-aos="fade-up" data-aos-delay="50">Newsletter</h2>
+        </div>
+
+        <div class="newsletter-grid">
+          <!-- Card 1 -->
+          <div class="newsletter-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="newsletter-image">
+              <img src="assets/images/blog.jpg" alt="Web Design Trends" />
+            </div>
+            <div class="newsletter-content">
+              <p class="newsletter-date">June 15, 2023</p>
+              <h3 class="newsletter-title">Web Design Trends</h3>
+              <p class="newsletter-desc">
+                Discover the latest trends shaping modern web design in 2023 and
+                beyond.
+              </p>
+              <button
+                class="read-more"
+                onclick="window.location.href='news.html'"
+              >
+                Read More <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="newsletter-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="newsletter-image">
+              <img src="assets/images/blog.jpg" alt="CSS Innovations" />
+            </div>
+            <div class="newsletter-content">
+              <p class="newsletter-date">May 28, 2023</p>
+              <h3 class="newsletter-title">CSS Innovations</h3>
+              <p class="newsletter-desc">
+                Explore new CSS features that are revolutionizing how we style
+                websites.
+              </p>
+              <button
+                class="read-more"
+                onclick="window.location.href='news.html'"
+              >
+                Read More <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="newsletter-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="newsletter-image">
+              <img src="assets/images/blog.jpg" alt="JavaScript Updates" />
+            </div>
+            <div class="newsletter-content">
+              <p class="newsletter-date">April 10, 2023</p>
+              <h3 class="newsletter-title">JavaScript Updates</h3>
+              <p class="newsletter-desc">
+                Learn about the newest JavaScript features and how to implement
+                them.
+              </p>
+              <button
+                class="read-more"
+                onclick="window.location.href='news.html'"
+              >
+                Read More <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="view-more-container">
+          <button
+            class="view-button"
+            onclick="window.location.href='view-more.html'"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            View More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="blog-footer">
+      <div class="footer-container">
+        <!-- Footer Columns -->
+        <div class="footer-grid">
+          <!-- About Column -->
+          <div class="footer-column">
+            <h3 class="footer-heading">About Blog</h3>
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links Column -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Assosication</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Newsletter</h3>
+            <p class="footer-text">
+              Subscribe to get the latest articles and news.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="copyright">
+            &copy; 2023 siona solutions. All rights reserved.
+          </div>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 800, // Animation duration
+          easing: "ease-out-quad", // Easing type
+          once: true, // Only animate once
+          offset: 120, // Trigger offset (px from bottom)
+        });
+      });
+    </script>
+  </body>
+</html>
